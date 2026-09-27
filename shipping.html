@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สร้างรายการส่ง | POND KICKOFF</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><span>⚽</span> POND KICKOFF</a>
+  <nav>
+    <a href="index.html">หน้าหลัก</a><a class="active" href="shipping.html">สร้างรายการส่ง</a>
+    <a href="tracking.html">ติดตามพัสดุ</a><a href="network.html">เครือข่ายขนส่ง</a>
+  </nav>
+</header>
+<main class="page">
+  <div class="eyebrow">01 / CREATE SHIPMENT</div>
+  <h1>สร้างรายการขนส่งเสื้อกีฬา</h1>
+  <p class="muted">กรอกข้อมูลเพื่อสร้างหมายเลขพัสดุจำลอง</p>
+  <section class="form-grid">
+    <div class="panel">
+      <h2>ข้อมูลพัสดุ</h2>
+      <label>ชื่อผู้รับ<input id="receiver" placeholder="เช่น ธีรภัทร"></label>
+      <label>ประเภทเสื้อ<select id="jersey"><option>เสื้อฟุตบอล</option><option>เสื้อบาสเกตบอล</option><option>เสื้อวิ่ง</option><option>เสื้อทีมกีฬา</option></select></label>
+      <label>จำนวน<select id="qty"><option>1 ตัว</option><option>2 ตัว</option><option>3 ตัว</option><option>4 ตัว</option></select></label>
+      <label>ปลายทาง<select id="destination"><option>กรุงเทพฯ</option><option>นนทบุรี</option><option>ชลบุรี</option><option>เชียงใหม่</option><option>ภูเก็ต</option></select></label>
+      <button class="btn primary full" onclick="createShipment()">สร้างเลขพัสดุ</button>
+    </div>
+    <div class="panel preview">
+      <div class="tag">SHIPMENT PREVIEW</div>
+      <div id="shipmentPreview">
+        <div class="empty-icon">📦</div><h2>ยังไม่มีรายการ</h2><p class="muted">กรอกข้อมูลด้านซ้ายแล้วกดสร้างรายการ</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>POND KICKOFF JERSEY · Sports Jersey Delivery System</footer>
+<script src="script.js"></script>
+</body>
+</html>

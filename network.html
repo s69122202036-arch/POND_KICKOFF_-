@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เครือข่ายขนส่ง | POND KICKOFF</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+<a class="brand" href="index.html"><span>⚽</span> POND KICKOFF</a>
+<nav><a href="index.html">หน้าหลัก</a><a href="shipping.html">สร้างรายการส่ง</a><a href="tracking.html">ติดตามพัสดุ</a><a class="active" href="network.html">เครือข่ายขนส่ง</a></nav>
+</header>
+<main class="page">
+<div class="eyebrow">03 / GRAPH & TREE</div><h1>เครือข่ายขนส่งเสื้อกีฬา</h1>
+<p class="muted">แสดงจุดขนส่งเป็น Vertex และเส้นทางเป็น Edge พร้อมโครงสร้าง Tree ของศูนย์กระจายสินค้า</p>
+
+<section class="network-grid">
+<div class="panel">
+<h2>Weighted Graph</h2><div class="legend"><span>● Vertex = จุดขนส่ง</span><span>━ Edge = เส้นทาง</span></div>
+<div class="graph">
+  <div class="node n1">ร้าน POND</div><div class="node n2">ศูนย์กรุงเทพ</div><div class="node n3">ศูนย์เหนือ</div>
+  <div class="node n4">ศูนย์ตะวันออก</div><div class="node n5">ศูนย์ใต้</div><div class="node n6">ปลายทาง</div>
+  <span class="edge e1"></span><span class="edge e2"></span><span class="edge e3"></span><span class="edge e4"></span><span class="edge e5"></span><span class="edge e6"></span><span class="edge e7"></span><span class="edge e8"></span>
+</div>
+<div class="graph-data"><code>กรุงเทพ → [เหนือ, ตะวันออก, ใต้]</code><code>เหนือ → [กรุงเทพ, ปลายทาง]</code><code>ตะวันออก → [กรุงเทพ, ปลายทาง]</code><code>ใต้ → [กรุงเทพ, ปลายทาง]</code></div>
+</div>
+
+<div class="panel">
+<h2>Tree โครงสร้างการกระจาย</h2>
+<div class="tree"><div class="tree-level root">ศูนย์กระจายกลาง</div>
+<div class="tree-line"></div><div class="tree-children"><div><b>ภาคกลาง</b><small>กรุงเทพฯ</small><small>นนทบุรี</small></div><div><b>ภาคตะวันออก</b><small>ชลบุรี</small><small>ระยอง</small></div><div><b>ภาคเหนือ</b><small>เชียงใหม่</small><small>ลำปาง</small></div></div></div>
+<div class="tree-note"><b>Path ตัวอย่าง:</b> ศูนย์กลาง → ภาคเหนือ → เชียงใหม่</div>
+</div>
+</section>
+</main>
+<footer>POND KICKOFF JERSEY · Sports Jersey Delivery System</footer>
+<script src="script.js"></script>
+</body>
+</html>
